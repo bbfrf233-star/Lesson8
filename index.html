@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Трекер Продуктивности и Привычек</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <header class="header">
+            <h1>Мой Персональный Дашборд</h1>
+            <p>Управление задачами и привычками в одном месте</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Секция задач -->
+            <section class="card">
+                <h2>Список Задач</h2>
+                <div class="task-input-group">
+                    <input type="text" id="taskInput" placeholder="Новая задача...">
+                    <button id="addTaskBtn">Добавить</button>
+                </div>
+                <ul id="taskList" class="list"></ul>
+            </section>
+
+            <!-- Секция привычек -->
+            <section class="card">
+                <h2>Трекер Привычек</h2>
+                <div class="habit-input-group">
+                    <input type="text" id="habitInput" placeholder="Новая привычка...">
+                    <button id="addHabitBtn">Добавить</button>
+                </div>
+                <ul id="habitList" class="list"></ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
 </body>
+
 </html>
